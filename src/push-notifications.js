@@ -47,5 +47,5 @@ export function scheduleReminder() {
         if (notificationsEnabled && hasActive) {
             showPushNotification('Напоминание: у вас есть невыполненные задачи!');
         }
-    }, 1 * 1 * 30 * 1000); // каждые 2 часа
+    }, 10 * 1000); // каждые 2 часа
 }
