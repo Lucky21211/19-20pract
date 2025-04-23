@@ -1,0 +1,37 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="icons/icon-192.png">
+  <title>Умный список задач</title>
+</head>
+<body>
+    <div class="container">
+      <h1>📝 Умный список задач</h1>
+  
+      <form id="task-form">
+        <input type="text" id="task-input" placeholder="Новая задача..." required />
+        <button type="submit">Добавить</button>
+      </form>
+  
+      <div class="filters">
+        <button id="filter-all">Все</button>
+        <button id="filter-active">Активные</button>
+        <button id="filter-completed">Выполненные</button>
+      </div>
+  
+      <ul id="task-list"></ul>
+  
+      <div class="notifications">
+        <button id="enable-notifications">🔔 Включить уведомления</button>
+        <button id="disable-notifications">🚫 Выключить уведомления</button>
+      </div>
+    </div>
+  
+    <script src="../src/app.js" type="module"></script>
+  </body>
+  
